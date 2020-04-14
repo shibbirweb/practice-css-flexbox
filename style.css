@@ -12,27 +12,40 @@ body {
   margin: 0 auto;
 }
 
-.flex-container {
-  background: #fff;
-  display: flex;
-  flex-wrap: wrap;
+/* Menu Base Style */
+
+nav {
+  background: #333333;
 }
 
-.box {
-  height: 100px;
-  flex-grow: 1;
-  flex-basis: 100px;
-  /* flex: 1 0 200px; */
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.one {
-  background: red;
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
 }
 
-.two {
-  background: blue;
+nav a:hover {
+  background: #555;
 }
 
-.three {
-  background: green;
+/* Flex Style */
+
+@media screen and (min-width: 768px) {
+  /* Flex Container */
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* Flex Items */
+  nav li {
+    flex: 1 1 0;
+  }
 }
