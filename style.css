@@ -19,21 +19,20 @@ body {
 
 .box {
   height: 100px;
-  min-width: 100px;
-  float: left;
+  width: 320px;
 }
 
 .one {
   background: red;
-  flex-grow: 1;
+  flex-shrink: 4;
 }
 
 .two {
   background: blue;
-  flex-grow: 5;
+  flex-shrink: 5;
 }
 
 .three {
   background: green;
-  flex-grow: 1;
+  flex-shrink: 6;
 }
