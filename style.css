@@ -20,8 +20,9 @@ body {
 
 .box {
   height: 100px;
-  min-width: 288px;
   flex-grow: 1;
+  flex-basis: 100px;
+  /* flex: 1 0 200px; */
 }
 
 .one {
